@@ -18,6 +18,12 @@ struct ContentView: View {
                 }
                 
                 NavigationLink {
+                    AlertToSheetUIKit()
+                } label: {
+                    Text("AlertToSheetUIKit")
+                }
+                
+                NavigationLink {
                     ActivityIndicatorToSheetSwiftUI()
                 } label: {
                     Text("ActivityIndicatorToSheetSwiftUI")
