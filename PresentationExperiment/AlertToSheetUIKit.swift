@@ -52,11 +52,19 @@ private final class ViewController: UIViewController {
             .sink { [weak self] isCompleted in
                 guard let self = self else { return }
                 if isCompleted {
-                    self.reserveToPresent(UIHostingController(rootView: Text("Completed")), animated: true, completion: nil)
+                    let sheetViewController = UIHostingController(rootView: Text("Completed"))
+                    sheetViewController.presentationController?.delegate = self
+                    self.reserveToPresent(sheetViewController, animated: true, completion: nil)
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
             }
             .store(in: &cancellables)
+    }
+}
+
+extension ViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        state.isCompleted = false
     }
 }
