@@ -2,6 +2,12 @@ import Combine
 
 @MainActor
 final class ViewState: ObservableObject {
+    private enum OperationState {
+        case waiting
+        case operating
+        case completed
+    }
+
     @Published private var operationState: OperationState = .waiting
     
     var isOperating: Bool {
