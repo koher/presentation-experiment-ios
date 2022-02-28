@@ -14,27 +14,28 @@ struct ContentView: View {
                 NavigationLink {
                     ActivityIndicatorToSheetSwiftUI()
                 } label: {
-                    Text("ActivityIndicatorToSheetSwiftUI")
+                    Text("ActivityIndicator -> Sheet (SwiftUI)")
                 }
                 
                 NavigationLink {
                     ActivityIndicatorToSheetUIKit()
                 } label: {
-                    Text("ActivityIndicatorToSheetUIKit")
+                    Text("ActivityIndicator -> Sheet (UIKit)")
                 }
                 
                 NavigationLink {
                     AlertToSheetSwiftUI()
                 } label: {
-                    Text("AlertToSheetSwiftUI")
+                    Text("Alert -> Sheet (SwiftUI)")
                 }
                 
                 NavigationLink {
                     AlertToSheetUIKit()
                 } label: {
-                    Text("AlertToSheetUIKit")
+                    Text("Alert -> Sheet (UIKit)")
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
