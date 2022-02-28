@@ -1,7 +1,7 @@
 import Combine
 
 @MainActor
-final class OperationViewState: ObservableObject {
+final class ViewState: ObservableObject {
     @Published private var operationState: OperationState = .waiting
     
     var isOperating: Bool {

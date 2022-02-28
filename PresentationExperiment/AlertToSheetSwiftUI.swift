@@ -3,7 +3,7 @@ import Combine
 
 @MainActor
 struct AlertToSheetSwiftUI: View {
-    @StateObject private var state: OperationViewState = .init()
+    @StateObject private var state: ViewState = .init()
     
     var body: some View {
         Button("Start") {

@@ -18,7 +18,7 @@
 		D69553AF27CCC1B700D9CD9D /* OperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553AE27CCC1B700D9CD9D /* OperationState.swift */; };
 		D69553B227CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */; };
 		D69553B427CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */; };
-		D69553B627CCC50800D9CD9D /* OperationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B527CCC50800D9CD9D /* OperationViewState.swift */; };
+		D69553B627CCC50800D9CD9D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B527CCC50800D9CD9D /* ViewState.swift */; };
 		D69553BE27CCDE4400D9CD9D /* AlertToSheetUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */; };
 		D69553C027CCDFBC00D9CD9D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */; };
 		D69553C427CD026F00D9CD9D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */; };
@@ -56,7 +56,7 @@
 		D69553AE27CCC1B700D9CD9D /* OperationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationState.swift; sourceTree = "<group>"; };
 		D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCoverModifier.swift; sourceTree = "<group>"; };
 		D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorToSheetSwiftUI.swift; sourceTree = "<group>"; };
-		D69553B527CCC50800D9CD9D /* OperationViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewState.swift; sourceTree = "<group>"; };
+		D69553B527CCC50800D9CD9D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToSheetUIKit.swift; sourceTree = "<group>"; };
 		D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */,
 				D69553AC27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift */,
 				D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */,
-				D69553B527CCC50800D9CD9D /* OperationViewState.swift */,
+				D69553B527CCC50800D9CD9D /* ViewState.swift */,
 				D69553AE27CCC1B700D9CD9D /* OperationState.swift */,
 				D69553B027CCC45B00D9CD9D /* Supports */,
 				D695538627CCC13900D9CD9D /* Assets.xcassets */,
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69553B627CCC50800D9CD9D /* OperationViewState.swift in Sources */,
+				D69553B627CCC50800D9CD9D /* ViewState.swift in Sources */,
 				D69553AD27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift in Sources */,
 				D69553C427CD026F00D9CD9D /* UIViewController+Extensions.swift in Sources */,
 				D69553C027CCDFBC00D9CD9D /* ObservableObject+Extensions.swift in Sources */,

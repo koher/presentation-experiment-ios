@@ -13,7 +13,7 @@ struct AlertToSheetUIKit: UIViewControllerRepresentable {
 
 @MainActor
 private final class ViewController: UIViewController {
-    private let state: OperationViewState = .init()
+    private let state: ViewState = .init()
     
     private var cancellables: Set<AnyCancellable> = []
     
