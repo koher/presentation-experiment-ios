@@ -15,12 +15,13 @@
 		D695539E27CCC13900D9CD9D /* PresentationExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695539D27CCC13900D9CD9D /* PresentationExperimentUITests.swift */; };
 		D69553A027CCC13900D9CD9D /* PresentationExperimentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695539F27CCC13900D9CD9D /* PresentationExperimentUITestsLaunchTests.swift */; };
 		D69553AD27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553AC27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift */; };
-		D69553B227CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */; };
+		D69553B227CCC49100D9CD9D /* ActivityIndicatorCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B127CCC49100D9CD9D /* ActivityIndicatorCover.swift */; };
 		D69553B427CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */; };
 		D69553B627CCC50800D9CD9D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553B527CCC50800D9CD9D /* ViewState.swift */; };
 		D69553BE27CCDE4400D9CD9D /* AlertToSheetUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */; };
 		D69553C027CCDFBC00D9CD9D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */; };
 		D69553C427CD026F00D9CD9D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */; };
+		D69553C627CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +53,13 @@
 		D695539D27CCC13900D9CD9D /* PresentationExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationExperimentUITests.swift; sourceTree = "<group>"; };
 		D695539F27CCC13900D9CD9D /* PresentationExperimentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationExperimentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D69553AC27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToSheetSwiftUI.swift; sourceTree = "<group>"; };
-		D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCoverModifier.swift; sourceTree = "<group>"; };
+		D69553B127CCC49100D9CD9D /* ActivityIndicatorCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCover.swift; sourceTree = "<group>"; };
 		D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorToSheetSwiftUI.swift; sourceTree = "<group>"; };
 		D69553B527CCC50800D9CD9D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToSheetUIKit.swift; sourceTree = "<group>"; };
 		D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorToSheetUIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				D695538227CCC13600D9CD9D /* PresentationExperimentApp.swift */,
 				D695538427CCC13600D9CD9D /* ContentView.swift */,
 				D69553B327CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift */,
+				D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */,
 				D69553AC27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift */,
 				D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */,
 				D69553B527CCC50800D9CD9D /* ViewState.swift */,
@@ -149,7 +152,7 @@
 		D69553B027CCC45B00D9CD9D /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */,
+				D69553B127CCC49100D9CD9D /* ActivityIndicatorCover.swift */,
 				D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */,
 				D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */,
 			);
@@ -291,10 +294,11 @@
 				D69553C427CD026F00D9CD9D /* UIViewController+Extensions.swift in Sources */,
 				D69553C027CCDFBC00D9CD9D /* ObservableObject+Extensions.swift in Sources */,
 				D69553B427CCC4A500D9CD9D /* ActivityIndicatorToSheetSwiftUI.swift in Sources */,
-				D69553B227CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift in Sources */,
+				D69553B227CCC49100D9CD9D /* ActivityIndicatorCover.swift in Sources */,
 				D69553BE27CCDE4400D9CD9D /* AlertToSheetUIKit.swift in Sources */,
 				D695538527CCC13600D9CD9D /* ContentView.swift in Sources */,
 				D695538327CCC13600D9CD9D /* PresentationExperimentApp.swift in Sources */,
+				D69553C627CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

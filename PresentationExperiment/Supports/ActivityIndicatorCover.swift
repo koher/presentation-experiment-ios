@@ -27,14 +27,11 @@ private struct ActivityIndicatorCoverView<Content: View>: UIViewControllerRepres
         if isPresented {
             guard viewController.presentedViewController == nil else { return }
             
-            let indicatorViewController: ActivityIndicatorCoverViewController = .init()
-            indicatorViewController.modalPresentationStyle = .overFullScreen
-            indicatorViewController.modalTransitionStyle = .crossDissolve
-            
-            context.coordinator.presentedViewController = indicatorViewController
-            viewController.present(indicatorViewController, animated: true, completion: nil)
+            let indicatorController: ActivityIndicatorCoverController = .init()
+            context.coordinator.presentedViewController = indicatorController
+            viewController.present(indicatorController, animated: true, completion: nil)
         } else {
-            guard let indicatorViewController = viewController.presentedViewController, indicatorViewController === context.coordinator.presentedViewController else { return }
+            guard let indicatorController = viewController.presentedViewController, indicatorController === context.coordinator.presentedViewController else { return }
             viewController.dismiss(animated: true, completion: nil)
         }
     }
@@ -49,8 +46,19 @@ private struct ActivityIndicatorCoverView<Content: View>: UIViewControllerRepres
 }
 
 @MainActor
-private final class ActivityIndicatorCoverViewController: UIViewController {
-    override func viewDidLoad() {
+public final class ActivityIndicatorCoverController: UIViewController {
+    @MainActor
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+        modalPresentationStyle = .overFullScreen
+        modalTransitionStyle = .crossDissolve
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor { traitCollection in
@@ -60,7 +68,7 @@ private final class ActivityIndicatorCoverViewController: UIViewController {
             default: return .black
             }
         }
-        .withAlphaComponent((1.0 - 182.0 / 255.0)) // この透過率は標準のモーダルと同じ比率を計算したもの
+        .withAlphaComponent((1.0 - 182.0 / 255.0))
         
         let baseView: UIView = .init()
         baseView.translatesAutoresizingMaskIntoConstraints = false

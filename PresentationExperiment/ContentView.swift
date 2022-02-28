@@ -12,6 +12,18 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink {
+                    ActivityIndicatorToSheetSwiftUI()
+                } label: {
+                    Text("ActivityIndicatorToSheetSwiftUI")
+                }
+                
+                NavigationLink {
+                    ActivityIndicatorToSheetUIKit()
+                } label: {
+                    Text("ActivityIndicatorToSheetUIKit")
+                }
+                
+                NavigationLink {
                     AlertToSheetSwiftUI()
                 } label: {
                     Text("AlertToSheetSwiftUI")
@@ -21,12 +33,6 @@ struct ContentView: View {
                     AlertToSheetUIKit()
                 } label: {
                     Text("AlertToSheetUIKit")
-                }
-                
-                NavigationLink {
-                    ActivityIndicatorToSheetSwiftUI()
-                } label: {
-                    Text("ActivityIndicatorToSheetSwiftUI")
                 }
             }
         }
