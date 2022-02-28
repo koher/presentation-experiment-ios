@@ -117,9 +117,7 @@
 				D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */,
 				D69553B527CCC50800D9CD9D /* OperationViewState.swift */,
 				D69553AE27CCC1B700D9CD9D /* OperationState.swift */,
-				D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */,
-				D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */,
-				D69553B027CCC45B00D9CD9D /* Modifiers */,
+				D69553B027CCC45B00D9CD9D /* Supports */,
 				D695538627CCC13900D9CD9D /* Assets.xcassets */,
 				D695538827CCC13900D9CD9D /* Preview Content */,
 			);
@@ -151,12 +149,14 @@
 			path = PresentationExperimentUITests;
 			sourceTree = "<group>";
 		};
-		D69553B027CCC45B00D9CD9D /* Modifiers */ = {
+		D69553B027CCC45B00D9CD9D /* Supports */ = {
 			isa = PBXGroup;
 			children = (
 				D69553B127CCC49100D9CD9D /* ActivityIndicatorCoverModifier.swift */,
+				D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */,
+				D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */,
 			);
-			path = Modifiers;
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
