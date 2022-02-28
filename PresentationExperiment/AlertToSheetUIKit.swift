@@ -41,7 +41,7 @@ private final class ViewController: UIViewController {
                 guard let self = self else { return }
                 if isCompleted {
                     let alertController: UIAlertController = .init(title: "Operating...", message: nil, preferredStyle: .alert)
-                    self.present(alertController, animated: true, completion: nil)
+                    self.reserveToPresent(alertController, animated: true, completion: nil)
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
@@ -52,7 +52,7 @@ private final class ViewController: UIViewController {
             .sink { [weak self] isCompleted in
                 guard let self = self else { return }
                 if isCompleted {
-                    self.present(UIHostingController(rootView: Text("Completed")), animated: true, completion: nil)
+                    self.reserveToPresent(UIHostingController(rootView: Text("Completed")), animated: true, completion: nil)
                 } else {
                     self.dismiss(animated: true, completion: nil)
                 }
