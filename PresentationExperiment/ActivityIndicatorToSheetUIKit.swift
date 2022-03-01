@@ -37,9 +37,9 @@ private final class ViewController: UIViewController {
         ])
         
         state.publisher(for: \.isOperating)
-            .sink { [weak self] isCompleted in
+            .sink { [weak self] isOperating in
                 guard let self = self else { return }
-                if isCompleted {
+                if isOperating {
                     let indicatorController: ActivityIndicatorCoverController = .init()
                     self.reserveToPresent(indicatorController, animated: true, completion: nil)
                 } else {

@@ -37,9 +37,9 @@ private final class ViewController: UIViewController {
         ])
         
         state.publisher(for: \.isOperating)
-            .sink { [weak self] isCompleted in
+            .sink { [weak self] isOperating in
                 guard let self = self else { return }
-                if isCompleted {
+                if isOperating {
                     let alertController: UIAlertController = .init(title: "Operating...", message: nil, preferredStyle: .alert)
                     self.reserveToPresent(alertController, animated: true, completion: nil)
                 } else {
