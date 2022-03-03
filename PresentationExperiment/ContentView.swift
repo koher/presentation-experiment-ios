@@ -24,6 +24,12 @@ struct ContentView: View {
                 }
                 
                 NavigationLink {
+                    ActivityIndicatorByChild()
+                } label: {
+                    Text("ActivityIndicator by Child")
+                }
+
+                NavigationLink {
                     AlertToSheetSwiftUI()
                 } label: {
                     Text("Alert -> Sheet (SwiftUI)")
@@ -33,6 +39,12 @@ struct ContentView: View {
                     AlertToSheetUIKit()
                 } label: {
                     Text("Alert -> Sheet (UIKit)")
+                }
+                
+                NavigationLink {
+                    AlertByChild()
+                } label: {
+                    Text("Alert by Child")
                 }
             }
             .navigationBarHidden(true)

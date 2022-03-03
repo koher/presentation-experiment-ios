@@ -8,19 +8,22 @@ extension View {
 
 private struct ActivityIndicatorCoverModifier: ViewModifier {
     let isPresented: Bool
+    
+    @State private var size: CGSize?
 
     func body(content: Content) -> some View {
-        ActivityIndicatorCoverView(isPresented: isPresented, content: content)
-            .ignoresSafeArea()
+        ActivityIndicatorCoverView(isPresented: isPresented, size: $size, content: content)
+            .frame(width: size?.width, height: size?.height)
     }
 }
 
 private struct ActivityIndicatorCoverView<Content: View>: UIViewControllerRepresentable {
     let isPresented: Bool
+    @Binding var size: CGSize?
     let content: Content
     
     func makeUIViewController(context: Context) -> UIHostingController<Content> {
-        UIHostingController<Content>(rootView: content)
+        HostingController<Content>(size: $size, rootView: content)
     }
     
     func updateUIViewController(_ viewController: UIHostingController<Content>, context: Context) {
@@ -91,5 +94,24 @@ public final class ActivityIndicatorCoverController: UIViewController {
             baseView.trailingAnchor.constraint(equalTo: indicatorView.trailingAnchor, constant: padding),
             baseView.bottomAnchor.constraint(equalTo: indicatorView.bottomAnchor, constant: padding),
         ])
+    }
+}
+
+private class HostingController<Content>: UIHostingController<Content> where Content: View {
+    @Binding var size: CGSize?
+    
+    init(size: Binding<CGSize?>, rootView: Content) {
+        self._size = size
+        super.init(rootView: rootView)
+    }
+    
+    @MainActor @objc required dynamic init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        view.sizeToFit()
+        size = view.frame.size
     }
 }

@@ -22,6 +22,8 @@
 		D69553C027CCDFBC00D9CD9D /* ObservableObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */; };
 		D69553C427CD026F00D9CD9D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */; };
 		D69553C627CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */; };
+		D69553CC27D06D9200D9CD9D /* AlertByChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553CB27D06D9200D9CD9D /* AlertByChild.swift */; };
+		D69553CE27D06EFB00D9CD9D /* ActivityIndicatorByChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69553CD27D06EFB00D9CD9D /* ActivityIndicatorByChild.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		D69553BF27CCDFBC00D9CD9D /* ObservableObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+Extensions.swift"; sourceTree = "<group>"; };
 		D69553C327CD026F00D9CD9D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorToSheetUIKit.swift; sourceTree = "<group>"; };
+		D69553CB27D06D9200D9CD9D /* AlertByChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertByChild.swift; sourceTree = "<group>"; };
+		D69553CD27D06EFB00D9CD9D /* ActivityIndicatorByChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorByChild.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				D69553C527CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift */,
 				D69553AC27CCC16300D9CD9D /* AlertToSheetSwiftUI.swift */,
 				D69553BD27CCDE4400D9CD9D /* AlertToSheetUIKit.swift */,
+				D69553CB27D06D9200D9CD9D /* AlertByChild.swift */,
+				D69553CD27D06EFB00D9CD9D /* ActivityIndicatorByChild.swift */,
 				D69553B527CCC50800D9CD9D /* ViewState.swift */,
 				D69553B027CCC45B00D9CD9D /* Supports */,
 				D695538627CCC13900D9CD9D /* Assets.xcassets */,
@@ -299,6 +305,8 @@
 				D695538527CCC13600D9CD9D /* ContentView.swift in Sources */,
 				D695538327CCC13600D9CD9D /* PresentationExperimentApp.swift in Sources */,
 				D69553C627CD0AA900D9CD9D /* ActivityIndicatorToSheetUIKit.swift in Sources */,
+				D69553CE27D06EFB00D9CD9D /* ActivityIndicatorByChild.swift in Sources */,
+				D69553CC27D06D9200D9CD9D /* AlertByChild.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
